@@ -1,21 +1,17 @@
 <script setup>
 defineProps({
   title: { type: String, required: true },
-  order: { type: Number, required: true },
-  price: { type: Number, required: true }
+  order: { type: Number, required: true }
 })
 </script>
 
 <template>
   <div :class="$style.root">
-    <span>Фильм:</span>
+    <span>Название:</span>
     <strong>{{ title }}</strong>
 
     <span>Место:</span>
     <strong>{{ order }}</strong>
-
-    <span>Цена:</span>
-    <strong>{{ price }}р</strong>
   </div>
 </template>
 

@@ -7,7 +7,6 @@ defineProps({
 })
 
 const title = 'Мстители'
-const price = 500
 </script>
 
 <template>
@@ -18,7 +17,6 @@ const price = 500
       :class="$style.tooltip"
       :order="order"
       :title="title"
-      :price="price"
     />
   </div>
 </template>
