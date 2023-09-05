@@ -1,9 +1,9 @@
 export default {
-    reserv: async payload => {
+    reserve: async payload => {
         console.log({
             payload: {
                 ...payload,
-                timeID: new Date().toISOString()
+                time: new Date().toISOString()
             },
             status: 'pending'
         })
@@ -11,7 +11,7 @@ export default {
         await new Promise(resolve => setTimeout(resolve, 500))
 
         const responce = {
-            data: { reservedId: payload.pointId },
+            data: { reservedId: payload.point },
             status: 'success'
         }
 

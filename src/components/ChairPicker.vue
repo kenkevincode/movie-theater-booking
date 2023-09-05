@@ -12,11 +12,11 @@ const chairCount = 40
 
 const reservedIdslist = reactive([])
 
-const reserv = async order => {
+const reserve = async order => {
     try {
-        const reservedId = await api.reserv({
-            pointId: order,
-            userId: user.value.id
+        const reservedId = await api.reserve({
+            point: order,
+            user: user.value.id
         })
 
         reservedIdslist.push(reservedId)
@@ -34,7 +34,7 @@ const reserv = async order => {
         :key="order"
         :order="order"
         :is-reserved="reservedIdslist.includes(order)"
-        @click="reserv(order)"
+        @click="reserve(order)"
     />
   </div>
 </template>
