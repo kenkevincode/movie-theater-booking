@@ -9,7 +9,7 @@ const { setUser } = useUser()
 
 onBeforeMount(() => {
   setUser({
-    id: crypto.randomUUID(),
+    id: crypto.randomUUID()
   })
 })
 </script>
@@ -21,9 +21,9 @@ onBeforeMount(() => {
 </template>
 
 <style module>
- .root {
-    display: grid;
-    place-items: center;
-    height: 100vh;
- }
+.root {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
 </style>
