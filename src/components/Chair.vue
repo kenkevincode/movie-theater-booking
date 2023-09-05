@@ -45,8 +45,8 @@ const title = 'Мстители'
 
 .tooltip {
   position: absolute;
-  top: -124px;
-  right: -150px;
+  top: -94px;
+  right: -174px;
   visibility: hidden;
 }
 
